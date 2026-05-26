@@ -89,20 +89,20 @@
 
   <style>
     :root {
-      --bg-primary: #0a0a0a;
-      --bg-secondary: #111111;
-      --bg-elevated: #1a1a1a;
-      --bg-card: #151515;
-      --text-primary: #f5f0eb;
-      --text-secondary: #a09890;
-      --text-muted: #6b6560;
-      --accent: #c8a870;
-      --accent-light: #dfc59e;
-      --accent-dark: #9e7d4a;
+      --bg-primary: #ffffff;
+      --bg-secondary: #f4f7fb;
+      --bg-elevated: #ffffff;
+      --bg-card: #ffffff;
+      --text-primary: #0b1f3a;
+      --text-secondary: #4a5a73;
+      --text-muted: #8896aa;
+      --accent: #2a73b5;
+      --accent-light: #6fa8dc;
+      --accent-dark: #1c4a7a;
       --white: #ffffff;
-      --border: rgba(200, 168, 112, 0.15);
-      --border-subtle: rgba(255, 255, 255, 0.06);
-      --overlay: rgba(10, 10, 10, 0.7);
+      --border: rgba(42, 115, 181, 0.20);
+      --border-subtle: rgba(11, 31, 58, 0.10);
+      --overlay: rgba(11, 31, 58, 0.7);
       --radius-sm: 4px;
       --radius-md: 8px;
       --radius-lg: 16px;
@@ -1490,6 +1490,45 @@
       .hero-actions .btn-secondary { width: 100%; justify-content: center; }
       .process-steps { grid-template-columns: 1fr; }
     }
+  
+    /* ===== Patterson light premium overrides ===== */
+    body { background: var(--bg-primary); color: var(--text-primary); }
+    .nav { background: rgba(255, 255, 255, 0.96) !important; box-shadow: 0 1px 0 rgba(11,31,58,0.06), 0 4px 16px rgba(11,31,58,0.04); border-bottom: 1px solid var(--border-subtle); }
+    .nav-dropdown-menu { background: rgba(255, 255, 255, 0.98) !important; box-shadow: 0 8px 24px rgba(11,31,58,0.10); border: 1px solid var(--border-subtle) !important; }
+    .nav-cta, .nav-cta:hover { color: #ffffff !important; }
+    .nav-cta:hover { background: var(--accent-dark) !important; }
+    .mobile-menu .mobile-cta { color: #ffffff !important; }
+    .btn-primary, .btn-primary:hover { color: #ffffff !important; }
+    .btn-primary:hover { background: var(--accent-dark) !important; }
+    /* Hero on dark image overlay: keep text light */
+    .hero h1 { color: #ffffff !important; }
+    .hero h1 em { color: var(--accent-light) !important; }
+    .hero-sub { color: rgba(255,255,255,0.82) !important; }
+    .hero-overline { color: var(--accent-light) !important; }
+    /* Interior page hero on dark image */
+    .page-hero h1 { color: #ffffff; }
+    .page-hero h1 em { color: var(--accent-light); }
+    .page-hero .lead { color: rgba(255,255,255,0.88); }
+    .page-hero .breadcrumb { color: rgba(255,255,255,0.7); }
+    .page-hero .breadcrumb a { color: var(--accent-light); }
+    .page-hero .breadcrumb a:hover { color: #ffffff; }
+    /* Collection cards (dark image bg) */
+    .collection-card h3 { color: #ffffff; }
+    .collection-card p { color: rgba(255,255,255,0.85); }
+    /* About visual badge — glassy dark on dark image */
+    .about-visual-badge { background: rgba(11,31,58,0.85) !important; border-color: rgba(255,255,255,0.18) !important; }
+    .about-visual-badge strong, .about-visual-badge span { color: #ffffff; }
+    /* Cards on light surfaces */
+    .product-card { background: #ffffff; box-shadow: 0 2px 8px rgba(11,31,58,0.05); }
+    .product-card:hover { box-shadow: 0 8px 24px rgba(11,31,58,0.10); }
+    .product-card-img { background: var(--bg-secondary); }
+    /* Form fields */
+    .form-group input, .form-group textarea, .form-group select { background: #ffffff !important; color: var(--text-primary) !important; border-color: var(--border-subtle) !important; }
+    .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-muted); }
+    /* Footer */
+    .footer { background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); }
+    .footer-social a { color: var(--text-secondary); border-color: var(--border-subtle); }
+
   </style>
 </head>
 <body>
